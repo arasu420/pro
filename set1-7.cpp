@@ -19,14 +19,21 @@ int main()
  }
  else
  {
-  while(n>0)
+  while(n>1)
   {
       b=n%2;
       if(b==1)
       {
+          n=n-1;
+          n=n/2;
           count++;
+          n=n+1;
       }
-      n=n/2;
+      else
+      {
+          n=n/2;
+      }
+      
   }cout<<count;
  }return 0;
 }
